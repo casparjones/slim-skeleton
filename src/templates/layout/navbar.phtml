@@ -1,0 +1,21 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="#">Project name</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li<?= ($slimPattern == '/') ? ' class="active"' : ''; ?>><a href="/">Home</a></li>
+          <li<?= ($slimPattern == '/about') ? ' class="active"' : ''; ?>><a href="/about">About</a></li>
+          <li<?= ($slimPattern == '/contact') ? ' class="active"' : ''; ?>><a href="/contact">Contact</a></li>
+          <li<?= ($slimPattern == '/hallo/:name') ? ' class="active"' : ''; ?>><a href="/hallo/Bastian">Hallo</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
